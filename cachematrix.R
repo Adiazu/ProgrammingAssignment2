@@ -20,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) { ## Here you have to input a Matrix, 
          getSolve = getSolve)
 }
 
-cacheSolve <- function(x, ...) {  ## This function is the one that check if the inverse of the matrix had been already calculated
+
+## This function is the one that check if the inverse of the matrix had been already calculated
+
+cacheSolve <- function(x, ...) { 
     S <- x$getSolve()
     if(!is.null(S)) {
         message("getting cached data")
